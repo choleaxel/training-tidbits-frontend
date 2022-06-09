@@ -6,26 +6,50 @@ import { Row } from "react-bootstrap";
 export default function CardCarousel() {
   const [medications, setMedications] = useState();
   useEffect(() => {
-    // fetch the API
     fetch("https://training-tidbits-db.web.app/medications")
       .then((response) => response.json())
       .then((data) => setMedications(data))
       .catch(console.error);
   }, []);
   return (
-    <section style={{ marginTop: "60px" }}>
-      <Row>
-        {!medications ? (
-          <h2>Loading...</h2>
-        ) : (
-          medications.map((medication) => (
-            <MedicationCard medication={medication} key={medication.id} />
-          ))
-        )}
-      </Row>
-    </section>
+    <div class="container-fluid">
+      <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+        <Row class="col-5">
+          {!medications ? (
+            <h2>Loading...</h2>
+          ) : (
+            medications.map((medication) => (
+              <MedicationCard medication={medication} key={medication.id} />
+            ))
+          )}
+        </Row>
+      </div>
+    </div>
   );
-}
+} //still not scrolling
+
+//   const [medications, setMedications] = useState();
+//   useEffect(() => {
+//     // fetch the API
+//     fetch("https://training-tidbits-db.web.app/medications")
+//       .then((response) => response.json())
+//       .then((data) => setMedications(data))
+//       .catch(console.error);
+//   }, []);
+//   return (
+//     <section style={{ marginTop: "60px" }}>
+//       <Row className="row row-horizon">
+//         {!medications ? (
+//           <h2>Loading...</h2>
+//         ) : (
+//           medications.map((medication) => (
+//             <MedicationCard medication={medication} key={medication.id} />
+//           ))
+//         )}
+//       </Row>
+//     </section>
+//   );
+// }  //this works but is not scrollable
 
 //   return (
 //     <div class="container-fluid py-2">

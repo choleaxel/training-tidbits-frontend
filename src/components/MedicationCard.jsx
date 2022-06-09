@@ -16,12 +16,15 @@ export default function MedicationCard({ medication }) {
         <Card.Subtitle className="mb-2 text-muted">
           Common Uses: {`${medication.uses}`}
         </Card.Subtitle>
-        <Card.Text>
-          Contraindications: {`${medication.contraindication}`}
-        </Card.Text>
         <Card.Text>Medication Category: {`${medication.category}`}</Card.Text>
-        <Card.Text>🐶 :{medication.canine ? "✅" : "❎"}</Card.Text>
-        <Card.Text>🐱 :{medication.feline ? "✅" : "❎"}</Card.Text>
+        <Card.Text>
+          <Card.Text>
+            Contraindications: {`${medication.contraindication}`}
+          </Card.Text>
+          <br />
+          🐶 :{medication.canine ? "✅" : "❎"} 🐱 :
+          {medication.feline ? "✅" : "❎"}
+        </Card.Text>
       </Card.Body>
     </Card>
   );

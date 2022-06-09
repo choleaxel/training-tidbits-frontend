@@ -1,13 +1,13 @@
 import "./App.css";
 import CardCarousel from "./components/Carousel";
-import MedicationCard from "./components/MedicationCard";
 import React from "react";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <header>
-        <h1>Chole's Critter Clinic Training Tidbits</h1>
         <h2>"Learning in little bits"</h2>
       </header>
       <div>
