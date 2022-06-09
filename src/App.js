@@ -12,7 +12,6 @@ function App() {
       </header>
       <div>
         <CardCarousel />
-        {/* <MedicationCard /> */}
       </div>
     </div>
   );
@@ -20,4 +19,4 @@ function App() {
 
 export default App;
 
-//https://training-tidbits-db.web.app
+//url: https://training-tidbits-db.web.app

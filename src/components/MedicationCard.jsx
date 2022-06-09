@@ -19,7 +19,9 @@ export default function MedicationCard({ medication }) {
         <Card.Text>
           Contraindications: {`${medication.contraindication}`}
         </Card.Text>
-        <Card.Link href="#">More Info</Card.Link>
+        <Card.Text>Medication Category: {`${medication.category}`}</Card.Text>
+        <Card.Text>🐶 :{medication.canine ? "✅" : "❎"}</Card.Text>
+        <Card.Text>🐱 :{medication.feline ? "✅" : "❎"}</Card.Text>
       </Card.Body>
     </Card>
   );

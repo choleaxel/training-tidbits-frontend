@@ -1,13 +1,12 @@
 import MedicationCard from "./MedicationCard";
-import { Card } from "react-bootstrap";
-import { Carousel } from "react-bootstrap";
+
 import { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
 
 export default function CardCarousel() {
   const [medications, setMedications] = useState();
   useEffect(() => {
-    // fetch our API
+    // fetch the API
     fetch("https://training-tidbits-db.web.app/medications")
       .then((response) => response.json())
       .then((data) => setMedications(data))
@@ -42,3 +41,17 @@ export default function CardCarousel() {
 //     </div>
 //   );
 // }
+
+{
+  /* <div class="d-flex flex-row flex-nowrap overflow-auto">
+  <div class="card card-block mx-2" style="min-width: 300px;">
+    Card
+  </div>
+  <div class="card card-block mx-2" style="min-width: 300px;">
+    Card
+  </div>
+  <div class="card card-block mx-2" style="min-width: 300px;">
+    Card
+  </div>
+</div>; */
+}
