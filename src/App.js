@@ -3,6 +3,8 @@ import CardCarousel from "./components/Carousel";
 import React from "react";
 import NavBar from "./components/NavBar";
 
+//add fetch api here that way we can use context instead of raising up
+//remove from card and carousel, bring in usestate.
 function App() {
   return (
     <div className="App">

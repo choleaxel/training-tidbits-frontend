@@ -9,7 +9,7 @@ export default function NavBar() {
         </Navbar.Brand>
         <div className="submit-new">
           <a href="/Form">
-            <h4>Submit New!</h4>
+            <h4>Submit New</h4>
           </a>
         </div>
       </Container>
