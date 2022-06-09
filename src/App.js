@@ -1,6 +1,7 @@
 import "./App.css";
 import CardCarousel from "./components/Carousel";
 import MedicationCard from "./components/MedicationCard";
+import React from "react";
 
 function App() {
   return (
@@ -11,10 +12,12 @@ function App() {
       </header>
       <div>
         <CardCarousel />
-        <MedicationCard />
+        {/* <MedicationCard /> */}
       </div>
     </div>
   );
 }
 
 export default App;
+
+//https://training-tidbits-db.web.app
