@@ -45,7 +45,25 @@ export default functions AddMedication() {
                     onChange={handleChange} />
                 </label>
                 <br />
-                <label for='</label>
+                <label for='uses'>
+                    Uses:
+                    <input name='uses' type='text' value={newMedication.uses}
+                    onChange={handleChange} />
+                </label>
+                <br />
+                <label for='contraindications'>
+                Contraindications:
+                    <input name='contraindications' type='text' value={newMedication.contraindications}
+                    onChange={handleChange} />
+                </label>
+                <br />
+                <label for='category'>
+                    Category:
+                    <input name='category' type='text' value={newMedication.category}
+                    onChange={handleChange} />
+                </label>
+                <br />
+
             </form>
         </section> 
      )
