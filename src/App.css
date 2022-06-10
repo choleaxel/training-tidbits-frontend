@@ -50,6 +50,14 @@ footer {
   border-radius: 5;
 }
 
+.menubar {
+  padding: 40px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
 /* .card-body-span {
   width: 100%;
   display: block;

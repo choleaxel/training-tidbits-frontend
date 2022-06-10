@@ -16,7 +16,7 @@ export default function AddMedication() {
   const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventdefault();
+    e.preventDefault();
     fetch("https://training-tidbits-db.web.app/medications", {
       method: "POST",
       headers: {
@@ -24,7 +24,7 @@ export default function AddMedication() {
       },
       body: JSON.stringify(newMedication),
     })
-      .then(() => navigate("/"))
+      .then(() => navigate("/Form"))
       .catch(setError);
   };
   const handleChange = (e) => {
@@ -59,12 +59,12 @@ export default function AddMedication() {
           />
         </label>
         <br />
-        <label for="contraindications">
-          Contraindications:
+        <label for="contraindication">
+          Contraindication:
           <input
-            name="contraindications"
+            name="contraindication"
             type="text"
-            value={newMedication.contraindications}
+            value={newMedication.contraindication}
             onChange={handleChange}
           />
         </label>
@@ -79,7 +79,9 @@ export default function AddMedication() {
           />
         </label>
         <br />
-        <button type="submit">Submit New Medication</button>
+        <button type="submit" onClick={() => handleSubmit()}>
+          Submit New Medication
+        </button>
       </form>
     </section>
   );
