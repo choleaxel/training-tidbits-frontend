@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 
 export default function App() {
   const [medications, setMedications] = useState();
-  console.log(medications);
   useEffect(() => {
     fetch("https://training-tidbits-db.web.app/medications")
       .then((res) => res.json())
@@ -20,7 +19,7 @@ export default function App() {
     <div className="App">
       <NavBar />
       <header>
-        <h2>"Learning in little bits"</h2>
+        <h2 className="title-learn">"Learning in little bits"</h2>
       </header>
       <div>
         <CardCarousel medications={medications} />

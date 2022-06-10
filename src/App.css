@@ -39,6 +39,17 @@ footer {
   font-size: x-small;
 }
 
+.title-learn {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.submit-new {
+  border: 2px solid #000;
+  border-radius: 5;
+}
+
 /* .card-body-span {
   width: 100%;
   display: block;
