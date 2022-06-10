@@ -19,7 +19,7 @@ export default function App() {
     <div className="App">
       <NavBar />
       <header>
-        <h2 className="title-learn">"Learning in little bits"</h2>
+        <h2 className="title-learn">Learning in little bits</h2>
       </header>
       <div>
         <CardCarousel medications={medications} />

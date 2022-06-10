@@ -44,6 +44,8 @@ export default functions AddMedication() {
                     Name: <input name='name' type='text' value={newMedication.name}
                     onChange={handleChange} />
                 </label>
+                <br />
+                <label for='</label>
             </form>
         </section> 
      )
