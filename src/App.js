@@ -25,6 +25,7 @@ export default function App() {
       <div>
         <CardCarousel medications={medications} />
       </div>
+      <footer>Coding with Chole</footer>
     </div>
   );
 }

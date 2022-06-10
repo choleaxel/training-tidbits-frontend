@@ -20,3 +20,6 @@ export default function MedicationCard({ medication }) {
     // </div>
   );
 }
+
+//extra: use actual images for the dog and cat
+//
