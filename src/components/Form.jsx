@@ -28,6 +28,25 @@ export default functions AddMedication() {
          .catch(setError);
 
      }
+     const handleChange = (e) => {
+         const newValue = (e.target.value)
+         setNewMedication({
+             ...newMedication,
+             [e.target.name]: newValue,
+        });
+     }
+     return (
+        <section style={{ margin: '2em 1em' }}>
+            <h1> Add New Medication </h1>
+            {error && <h2 style={{ color: 'red' }}>{error}</h2>}
+            <form onSubmit={handleSubmit}>
+                <label for='name'>
+                    Name: <input name='name' type='text' value={newMedication.name}
+                    onChange={handleChange} />
+                </label>
+            </form>
+        </section> 
+     )
 
 
 }
