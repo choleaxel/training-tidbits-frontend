@@ -1,12 +1,10 @@
 export default function NavBar() {
   return (
     <nav className="menubar">
-      {/* <div>
-        <a href="/home"></a>
-      </div> */}
       <div className="nav-links">
         <>
           <a href="/home">Home</a>
+          <br />
           <a href="/form">Add New Medication</a>
         </>
       </div>
