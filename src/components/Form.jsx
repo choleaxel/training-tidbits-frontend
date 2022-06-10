@@ -8,14 +8,26 @@ export default functions AddMedication() {
         name: '',
         uses: '',
         contraindication: '',
-        feline: true ,
-        canine: true ,
+        feline: false ,
+        canine: false ,
         category: ''
      })
 
      const [error, setError] = useState('');
 
-     const 
+     const handleSubmit = (e) => {
+         e.preventdefault();
+         fetch('', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newMedication),
+         })
+         .then(() => navigate('/'))
+         .catch(setError);
+
+     }
 
 
 }
