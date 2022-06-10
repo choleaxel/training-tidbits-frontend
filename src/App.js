@@ -1,11 +1,9 @@
 import "./App.css";
 import CardCarousel from "./components/Carousel";
+import AddMedication from "./components/Form";
 import React from "react";
 import NavBar from "./components/NavBar";
 import { useState, useEffect } from "react";
-
-//add fetch api here that way we can use context instead of raising up
-//remove from card and carousel, bring in usestate.
 
 export default function App() {
   const [medications, setMedications] = useState();
@@ -17,7 +15,10 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      <NavBar />
+      <header>
+        <h1 className="main-header">Training Tidbits </h1>
+        {/* <NavBar /> */}
+      </header>
       <header>
         <h2 className="title-learn">Learning in little bits</h2>
       </header>

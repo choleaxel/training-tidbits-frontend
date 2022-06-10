@@ -1,14 +1,28 @@
+import { useNavigate } from "react-router-dom";
+
 export default function NavBar() {
+  let navigate = useNavigate();
   return (
     <>
-      <div>
-        <h1 className="title">Chole's Critter Clinic Training Tidbits</h1>
-      </div>
-      <button className="submit-new">
-        <a href="/Form">
-          <h4>Submit New</h4>
-        </a>
-      </button>
+      <ul>
+        <li>
+          <item key="home" onClick={() => navigate("/")}>
+            Home
+          </item>
+        </li>
+        <li>
+          <item key="form" onClick={() => navigate("./Form")}>
+            Add New Medication
+          </item>
+        </li>
+      </ul>
     </>
   );
-}
+} //this is breaking my site, reconfigure
+
+/* </div>
+      <button className="submit-new">
+        <a href="/Form">
+          <h4>Add New Medication</h4>
+        </a>
+      </button> */
