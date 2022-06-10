@@ -83,4 +83,5 @@ export default function AddMedication() {
       </form>
     </section>
   );
-}
+} //still need to add boolean check boxes for species
+//drop down for medication category?
