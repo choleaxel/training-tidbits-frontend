@@ -89,7 +89,6 @@ export default function AddMedication() {
             onChange={handleChange}
           />
         </label>
-        <br />
         <label for="feline">
           For Feline Use? :
           <input
