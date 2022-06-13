@@ -29,6 +29,10 @@
   font-size: 1.5rem;
 }
 
+.page-title {
+  text-align: center;
+}
+
 .card-species {
   text-align: center;
   font-size: 1.5rem;
@@ -56,6 +60,10 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+}
+
+.nav-links {
+  text-align: right;
 }
 
 /* .card-body-span {

@@ -1,19 +1,11 @@
 import "./App.css";
-import CardCarousel from "./components/Carousel";
 import React from "react";
 import NavBar from "./components/NavBar";
-import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AddMedication from "./components/Form";
+import Home from "./components/Home";
 
 export default function App() {
-  const [medications, setMedications] = useState();
-  useEffect(() => {
-    fetch("https://training-tidbits-db.web.app/medications")
-      .then((res) => res.json())
-      .then((data) => setMedications(data))
-      .catch((err) => console.error(err));
-  }, []);
   return (
     <BrowserRouter>
       <div>
@@ -24,15 +16,11 @@ export default function App() {
           <NavBar />
         </nav>
         <body>
+          <h2 className="title-learn">Learning in little bites</h2>
           <Routes>
             <Route path="/Form" element={<AddMedication />} />
-            <Route path="/" />
+            <Route path="/Home" element={<Home />} />
           </Routes>
-          <h2 className="title-learn">Learning in little bites</h2>
-
-          <div>
-            <CardCarousel medications={medications} />
-          </div>
         </body>
         <footer>Coding with Chole</footer>
       </div>

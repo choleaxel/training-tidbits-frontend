@@ -24,7 +24,8 @@ export default function AddMedication() {
       },
       body: JSON.stringify(newMedication),
     })
-      .then(() => navigate("/Form"))
+      .then(() => navigate("/Home"))
+      .then(alert("Medication Added"))
       .catch(setError);
   };
   const handleChange = (e) => {
@@ -75,6 +76,26 @@ export default function AddMedication() {
             name="category"
             type="text"
             value={newMedication.category}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label for="canine">
+          For Canine Use? :
+          <input
+            name="canine"
+            type="checkbox"
+            value={newMedication.canine}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label for="feline">
+          For Feline Use? :
+          <input
+            name="feline"
+            type="checkbox"
+            value={newMedication.feline}
             onChange={handleChange}
           />
         </label>
