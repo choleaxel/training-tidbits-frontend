@@ -3,7 +3,7 @@ export default function NavBar() {
     <nav className="menubar">
       <div className="nav-links">
         <>
-          <a href="/home">🏠 Home</a>
+          <a href="/">🏠 Home</a>
           <a href="/form">💊 Add New Medication</a>
         </>
       </div>

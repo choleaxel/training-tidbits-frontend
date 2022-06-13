@@ -19,7 +19,7 @@ export default function App() {
           <h2 className="title-learn">Learning in little bites</h2>
           <Routes>
             <Route path="/Form" element={<AddMedication />} />
-            <Route path="/Home" element={<Home />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </body>
         <footer>Coding with Chole</footer>

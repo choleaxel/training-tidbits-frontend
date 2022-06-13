@@ -24,7 +24,7 @@ export default function AddMedication() {
       },
       body: JSON.stringify(newMedication),
     })
-      .then(() => navigate("/Home"))
+      .then(() => navigate("/"))
       .then(alert("Medication Added"))
       .catch(setError);
   };
