@@ -36,13 +36,14 @@ export default function AddMedication() {
     });
   };
   return (
-    <section style={{ margin: "2em 1em" }}>
-      <h1> Add New Medication </h1>
+    <section className="form-section">
+      <h1 className="form-title"> Add New Medication </h1>
       {error && <h2 style={{ color: "red" }}>{error}</h2>}
       <form onSubmit={handleSubmit}>
-        <label for="name">
+        <label className="form-labels" for="name">
           Name:
           <input
+            className="input-box"
             name="name"
             type="text"
             value={newMedication.name}
@@ -50,9 +51,10 @@ export default function AddMedication() {
           />
         </label>
         <br />
-        <label for="uses">
+        <label className="form-labels" for="uses">
           Uses:
           <input
+            className="input-box"
             name="uses"
             type="text"
             value={newMedication.uses}
@@ -60,9 +62,10 @@ export default function AddMedication() {
           />
         </label>
         <br />
-        <label for="contraindication">
+        <label className="form-labels" for="contraindication">
           Contraindication:
           <input
+            className="input-box"
             name="contraindication"
             type="text"
             value={newMedication.contraindication}
@@ -70,9 +73,10 @@ export default function AddMedication() {
           />
         </label>
         <br />
-        <label for="category">
+        <label className="form-labels" for="category">
           Category:
           <input
+            className="input-box"
             name="category"
             type="text"
             value={newMedication.category}
@@ -80,26 +84,32 @@ export default function AddMedication() {
           />
         </label>
         <br />
-        <label for="canine">
-          For Canine Use? :
+        <label className="form-labels" for="canine">
+          For Canine Use :
           <input
             name="canine"
             type="checkbox"
+            class="larger"
             value={newMedication.canine}
             onChange={handleChange}
           />
         </label>
-        <label for="feline">
-          For Feline Use? :
+        <label className="form-labels" for="feline">
+          For Feline Use :
           <input
             name="feline"
             type="checkbox"
+            class="larger"
             value={newMedication.feline}
             onChange={handleChange}
           />
         </label>
         <br />
-        <button type="submit" onClick={() => handleSubmit()}>
+        <button
+          className="btn-newmed"
+          type="submit"
+          onClick={() => handleSubmit()}
+        >
           Submit New Medication
         </button>
       </form>
