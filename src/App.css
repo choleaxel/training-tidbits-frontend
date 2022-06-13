@@ -8,6 +8,7 @@
   background-image: url("./Assets/pawprintsfish.png");
   background-size: cover;
 }
+/*would like to figure out how to make the background image less opaque*/
 
 .card-body {
   background-color: #aec8ce;
@@ -85,6 +86,7 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   padding: 35px;
+  margin: 25px 25px;
 }
 
 .form-title {
