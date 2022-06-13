@@ -3,14 +3,13 @@ export default function NavBar() {
     <nav className="menubar">
       <div className="nav-links">
         <>
-          <a href="/home">Home</a>
-          <br />
-          <a href="/form">Add New Medication</a>
+          <a href="/home">🏠 Home</a>
+          <a href="/form">💊 Add New Medication</a>
         </>
       </div>
     </nav>
   );
-}
+} //add horizontal navigation
 
 //   let navigate = useNavigate();
 //   return (
