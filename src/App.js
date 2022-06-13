@@ -8,7 +8,7 @@ import Home from "./components/Home";
 export default function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="App">
         <header>
           <h1 className="page-title">Training Tidbits </h1>
         </header>
