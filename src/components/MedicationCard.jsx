@@ -15,13 +15,18 @@ export default function MedicationCard({ medication }) {
         Contraindications: {`${medication?.contraindication}`}
       </p>
       <p className="card-species">
-        {medication?.canine ? <img src={dogImage} alt="dog icon" /> : ""}
-        {medication?.feline ? <img src={catImage} alt="cat icon" /> : ""}
+        {medication?.canine ? (
+          <img src={dogImage} alt="dog icon" title="Canine" />
+        ) : (
+          ""
+        )}
+        {medication?.feline ? (
+          <img src={catImage} alt="cat icon" title="Feline" />
+        ) : (
+          ""
+        )}
       </p>
     </div>
     // </div>
   );
 }
-
-//extra: use actual svg icons/images for the dog and cat
-//   <FontAwesomeIcon icon="fa-solid fa-dog" />

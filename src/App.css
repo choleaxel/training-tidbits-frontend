@@ -2,7 +2,7 @@
   background-image: url("./Assets/pawprintsfish.png");
   background-size: cover;
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
@@ -51,6 +51,7 @@
 .page-title {
   text-align: center;
   color: #937070;
+  margin-top: 0px;
 }
 
 .card-species {
@@ -132,6 +133,7 @@ footer {
   text-align: center;
   font-size: 30px;
   margin-top: 3px;
+  margin-bottom: 0;
   margin-right: 3px;
 }
 
