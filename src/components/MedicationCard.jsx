@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
+import dogImage from "../Assets/dog-solid.svg";
+import catImage from "../Assets/cat-solid.svg";
 
 export default function MedicationCard({ medication }) {
   return (
@@ -12,14 +15,14 @@ export default function MedicationCard({ medication }) {
       <p class="card-contra">
         Contraindications: {`${medication?.contraindication}`}
       </p>
-      <p class="card-species">
-        🐶 :{medication?.canine ? "✅" : "❎"} 🐱 :
-        {medication?.feline ? "✅" : "❎"}
+      <p className="card-species">
+        {medication?.canine ? <img src={dogImage} /> : ""}
+        {medication?.feline ? <img src={catImage} /> : ""}
       </p>
     </div>
     // </div>
   );
 }
 
-//extra: use actual images for the dog and cat
-//
+//extra: use actual svg icons/images for the dog and cat
+//   <FontAwesomeIcon icon="fa-solid fa-dog" />

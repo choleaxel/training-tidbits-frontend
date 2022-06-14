@@ -14,4 +14,4 @@ export default function CardCarousel({ medications }) {
       )}
     </div>
   );
-}
+} //insert another title or header 'Commonly used medications

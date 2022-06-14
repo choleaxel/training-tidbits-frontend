@@ -38,6 +38,7 @@ export default function AddMedication() {
   return (
     <section className="form-section">
       <h1 className="form-title"> Add New Medication </h1>
+      <h3 className="form-required"> All fields required </h3>
       {error && <h2 style={{ color: "red" }}>{error}</h2>}
       <form onSubmit={handleSubmit}>
         <label className="form-labels" for="name">
@@ -48,6 +49,7 @@ export default function AddMedication() {
             type="text"
             value={newMedication.name}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />
@@ -59,6 +61,7 @@ export default function AddMedication() {
             type="text"
             value={newMedication.uses}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />
@@ -70,6 +73,7 @@ export default function AddMedication() {
             type="text"
             value={newMedication.contraindication}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />
@@ -81,6 +85,7 @@ export default function AddMedication() {
             type="text"
             value={newMedication.category}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />
@@ -92,6 +97,7 @@ export default function AddMedication() {
             class="larger"
             value={newMedication.canine}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <label className="form-labels" for="feline">
@@ -102,6 +108,7 @@ export default function AddMedication() {
             class="larger"
             value={newMedication.feline}
             onChange={handleChange}
+            required="true"
           />
         </label>
         <br />
