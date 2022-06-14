@@ -1,14 +1,23 @@
-/* .card-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-} */
-
-.App {
+.whole-page {
   background-image: url("./Assets/pawprintsfish.png");
   background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 /*would like to figure out how to make the background image less opaque*/
+/*background color #dee9eb*/
+
+/* .App::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #dee9eb40;
+} using this caused links to not work, but made background opaque */
 
 .card-body {
   background-color: #aec8ce;
@@ -46,13 +55,14 @@
 
 footer {
   text-align: center;
-  font-size: x-small;
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .title-learn {
   text-align: center;
   font-size: 2em;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .submit-new {

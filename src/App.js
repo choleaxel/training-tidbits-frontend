@@ -8,7 +8,7 @@ import Home from "./components/Home";
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="whole-page">
         <header>
           <h1 className="page-title">Training Tidbits </h1>
         </header>
@@ -27,5 +27,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-//still no title
-//I want 'home' to be the front page where the carousel is,
