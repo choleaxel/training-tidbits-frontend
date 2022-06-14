@@ -27,3 +27,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+//questions for nikki, background image opacity.
