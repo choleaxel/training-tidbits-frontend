@@ -31,6 +31,10 @@
   border: 3px solid #000;
   border-radius: 20px;
 }
+.med-carousel-title {
+  text-align: center;
+  color: #937070;
+}
 
 .container-carousel {
   display: flex;
@@ -46,6 +50,7 @@
 
 .page-title {
   text-align: center;
+  color: #937070;
 }
 
 .card-species {
@@ -63,6 +68,7 @@ footer {
 
 .title-learn {
   text-align: center;
+  color: #937070;
   font-size: 2em;
   font-weight: 600;
 }
@@ -79,7 +85,27 @@ footer {
   flex-direction: row;
 }
 
-.nav-links a {
+.nav-btns {
+  padding: 5px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  margin: 10px;
+  background-color: #aec8ce;
+  font-size: 20px;
+}
+
+.house {
+  height: 40px;
+  width: 40px;
+}
+
+.pill {
+  height: 40px;
+  width: 40px;
+}
+
+/* .nav-btns {
   border-style: solid;
   border-radius: 5px;
   border-color: black;
@@ -88,7 +114,8 @@ footer {
   text-align: left;
   padding-right: 50px;
   text-decoration: none;
-}
+} */
+
 .form-section {
   border-style: solid;
   border-radius: 5px;
