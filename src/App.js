@@ -22,9 +22,13 @@ export default function App() {
             <Route path="/" element={<Home />} />
           </Routes>
         </body>
-        <footer>Coding with Chole</footer>
+        <footer> © Coding with Chole</footer>
       </div>
     </BrowserRouter>
   );
 }
 //questions for nikki, background image opacity.
+//login
+//sort cards alphabetically, by name. .sort() added to the front or backend(to the getAll)?
+//add more pages with other carousels and make home a page with dashboard of buttons?
+//other carousels, vaccinations, preventives, common procedures?
