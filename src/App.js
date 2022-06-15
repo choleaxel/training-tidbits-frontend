@@ -28,7 +28,8 @@ export default function App() {
   );
 }
 //questions for nikki, background image opacity.
-//login
+//login, google auth
 //sort cards alphabetically, by name. .sort() added to the front or backend(to the getAll)?
 //add more pages with other carousels and make home a page with dashboard of buttons?
 //other carousels, vaccinations, preventives, common procedures?
+// can only add meds when logged in, after which i can make delete button?
