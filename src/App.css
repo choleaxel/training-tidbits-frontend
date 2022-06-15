@@ -1,26 +1,16 @@
 .whole-page {
+  position: relative;
   background-image: url("./Assets/pawprintsfish.png");
   background-size: cover;
-  position: relative;
   height: 100%;
   width: 100%;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
-/*would like to figure out how to make the background image less opaque*/
-/*background color #dee9eb*/
-
-/* .App::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: #dee9eb40;
-} using this caused links to not work, but made background opaque */
+/*would like to figure out how to make the background image lighter, decrease opacity*/
+/* desired background color #dee9eb*/
 
 .card-body {
-  background-color: #aec8ce;
+  background-color: #dee9eb;
   max-width: 25%;
   padding: 10px;
   margin-bottom: 2rem;
@@ -32,6 +22,12 @@
   border-radius: 20px;
 }
 .med-carousel-title {
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  margin-right: 450px;
+  margin-left: 450px;
+  background-color: #aec8ce;
   text-align: center;
   color: #937070;
 }
@@ -49,7 +45,13 @@
 }
 
 .page-title {
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  margin-right: 500px;
+  margin-left: 500px;
   text-align: center;
+  background-color: #aec8ce;
   color: #937070;
   margin-top: 0px;
 }
@@ -68,6 +70,13 @@ footer {
 }
 
 .title-learn {
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  margin-right: 400px;
+  margin-left: 400px;
+  text-align: center;
+  background-color: #aec8ce;
   text-align: center;
   color: #937070;
   font-size: 2em;
@@ -106,22 +115,11 @@ footer {
   width: 40px;
 }
 
-/* .nav-btns {
-  border-style: solid;
-  border-radius: 5px;
-  border-color: black;
-  background-color: #aec8ce;
-  font-size: large;
-  text-align: left;
-  padding-right: 50px;
-  text-decoration: none;
-} */
-
 .form-section {
   border-style: solid;
   border-radius: 5px;
   border-color: black;
-  background-color: #ddadade6;
+  background-color: #ddadadf0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
