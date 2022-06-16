@@ -104,6 +104,7 @@ footer {
   margin: 10px;
   background-color: #aec8ce;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .house {
@@ -156,6 +157,7 @@ footer {
   margin: 10px;
   background-color: #aec8ce;
   font-size: medium;
+  cursor: pointer;
 }
 
 .input-box {
@@ -165,4 +167,42 @@ footer {
 input.larger {
   width: 22px;
   height: 22px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: black;
+  background-color: #ddadadf0;
+  padding: 35px;
+  margin: 25px 25px;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3px;
+  margin-bottom: 10;
+  margin-right: 3px;
+}
+
+.google-btn {
+  padding: 10px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  margin-right: 500px;
+  margin-left: 500px;
+  background-color: #aec8ce;
+  font-size: 20px;
+  box-shadow: 10px 5px 5px #937070;
+  cursor: pointer;
+}
+
+.bust {
+  height: 45px;
+  width: 45px;
 }

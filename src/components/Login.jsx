@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { useContext } from "react";
 import { UserContext } from "../App";
+import personImage from "../Assets/user-solid.svg";
 
 const firebaseConfig = {
   apiKey: "AIzaSyChNv2UV5daCBhB9od_a_GqIrekY1xsxLs",
@@ -25,9 +26,13 @@ export default function Login() {
   };
 
   return (
-    <section className="login-button">
-      <h2>Please login to add a new medication!</h2>
-      <button onClick={handleGoogleLogin}>Google Login</button>
+    <section className="login-section">
+      <h2 className="login-title">Please login to add a new medication!</h2>
+      <button className="google-btn" onClick={handleGoogleLogin}>
+        <img className="bust" src={personImage} alt="person bust"></img>
+        <br />
+        Google Login
+      </button>
     </section>
   );
 } //need to configure a logout button, below is what i found.
