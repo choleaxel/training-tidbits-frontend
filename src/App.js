@@ -42,4 +42,7 @@ export default function App() {
 //sort cards alphabetically, by name. .sort() added to the front or backend(to the getAll)?
 //add more pages with other carousels and make home a page with dashboard of buttons?
 //other carousels, vaccinations, preventives, common procedures?
-// can only add meds when logged in, after which i can make delete button?
+// if other collections add new would link to form page where there would be a drop down to
+//choose which collection to add to. Or add new button would be the drop down instead, navigate
+//to the different form pages, all separate form components
+// can only add when logged in.

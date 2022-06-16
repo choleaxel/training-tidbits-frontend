@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import homeImage from "../Assets/house-chimney-solid.svg";
-import pillImage from "../Assets/pills-solid.svg";
+import pillImage from "../Assets/pills-solid.svg"; //renamed svg and imported from assets folder
 
 export default function NavBar() {
   let navigate = useNavigate();
