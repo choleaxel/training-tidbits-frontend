@@ -31,8 +31,8 @@ export default function App() {
               <Route path="/" element={<Home />} />
             </Routes>
           </body>
-          <footer> © Coding with Chole</footer>
         </div>
+        <footer> © Coding with Chole</footer>
       </UserContext.Provider>
     </BrowserRouter>
   );

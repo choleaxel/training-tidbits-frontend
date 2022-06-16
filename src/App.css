@@ -6,7 +6,7 @@
   min-height: 100vh;
   width: 100%;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 /*would like to figure out how to make the background image lighter, decrease opacity*/
 /* desired background color #dee9eb*/
@@ -67,9 +67,7 @@
 
 footer {
   width: 100%;
-  height: 65px;
-  position: absolute;
-  margin-top: auto;
+  height: 60px;
   text-align: center;
   font-size: 16px;
   font-weight: 900;
