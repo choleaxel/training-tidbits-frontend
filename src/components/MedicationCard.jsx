@@ -7,12 +7,14 @@ export default function MedicationCard({ medication }) {
     // <div class="card-row">
     <div className="card-body">
       <p className="card-header">{`${medication?.name}`}</p>
-      <p className="card-uses">Common Uses: {`${medication?.uses}`}</p>
+      <p className="card-uses">
+        <b>Common Uses:</b> {`${medication?.uses}`}
+      </p>
       <p class="card-category">
-        Medication Category: {`${medication?.category}`}
+        <b>Medication Category:</b> {`${medication?.category}`}
       </p>
       <p className="card-contra">
-        Contraindications: {`${medication?.contraindication}`}
+        <b>Contraindications:</b> {`${medication?.contraindication}`}
       </p>
       <p className="card-species">
         {medication?.canine ? (
