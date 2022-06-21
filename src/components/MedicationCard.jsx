@@ -4,7 +4,6 @@ import catImage from "../Assets/cat-solid.svg";
 
 export default function MedicationCard({ medication }) {
   return (
-    // <div class="card-row">
     <div className="card-body">
       <p className="card-header">{`${medication?.name}`}</p>
       <p className="card-uses">
@@ -29,6 +28,5 @@ export default function MedicationCard({ medication }) {
         )}
       </p>
     </div>
-    // </div>
   );
 }

@@ -2,11 +2,9 @@
   position: relative;
   background-image: url("./Assets/pawprintsfish.png");
   background-size: cover;
-  /* height: 100%; */
   min-height: 100vh;
   width: 100%;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
-  /* flex-grow: 1; */
 }
 /*would like to figure out how to make the background image lighter, decrease opacity*/
 /* desired background color #dee9eb*/

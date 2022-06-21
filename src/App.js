@@ -32,7 +32,7 @@ export default function App() {
             </Routes>
           </body>
         </div>
-        <footer> © Coding with Chole</footer>
+        <footer> Training Tidbits © Coding with Chole 2022 </footer>
       </UserContext.Provider>
     </BrowserRouter>
   );

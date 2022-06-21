@@ -35,4 +35,4 @@ export default function Login() {
       </button>
     </section>
   );
-} //need to configure a logout button, below is what i found.
+}
